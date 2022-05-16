@@ -1,0 +1,48 @@
+.CreateTodoButton{
+    background: var(--App-4);
+    border: none;
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+    position: fixed;
+    left: calc(100% - 90px);
+    top: calc(100vh - 100px);
+    transition: box-shadow, background 0.15s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    z-index: 5;
+}
+
+.CreateTodoButton:hover{
+    background: var(--App-5);
+    box-shadow: 0 0 5px var(--App-4);
+    /* Make the CreateTodoButton-icon icon spin */
+    /* animation: spin 0.6s linear 0.5; */
+    transform: rotate(360deg);
+
+    /* Transitions */
+    transition: all 0.15s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.CreateTodoButton.Active{
+    /* Rotate the button 45 degrees */
+    transform: rotate(45deg);
+    background: var(--Danger-color-1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.CreateTodoButton-icon{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--Text-color-1);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,34 @@
+.fa-solid.fa-check {
+    color: var(--App-3);
+    font-size: 2.6rem;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.fa-solid.fa-check.TodoIcon--active {
+    color: var(--App-5);
+    /* Glow effect */
+    text-shadow: 0 0 5px var(--App-4);
+}
+
+.fa-solid.fa-check:hover {
+    color: var(--App-4);
+    /* Make bigger without affecting the other elements */
+    transform: scale(1.5);
+    /* Transitions */
+    transition: all 0.1s ease-in-out;
+}
+
+.fa-solid.fa-circle-minus {
+    color: var(--Danger-color-1);
+    font-size: 2.3rem;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.fa-solid.fa-circle-minus:hover {
+    /* Make bigger without affecting the other elements */
+    transform: scale(1.5);
+    /* Transitions */
+    transition: all 0.1s ease-in-out;
+}

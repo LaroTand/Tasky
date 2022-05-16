@@ -1,0 +1,68 @@
+form{
+    width: 90%;
+    max-width: 300px;
+    background: var(--App-2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+label{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--Text-color-1);
+}
+
+textarea{
+    background: var(--App-6);
+    border: none;
+    border-radius: 2px;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px 0;
+    width: calc(100% - 30px);
+    max-width: calc(100% - 30px);
+    height: 100px;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    transition: border 0.2s ease-in-out;
+}
+
+textarea::placeholder{
+    font-weight: 300;
+}
+
+textarea:focus{
+    outline-color: var(--App-4);
+}
+
+.TodoForm-buttonConatiner{
+    width: calc(100% - 30px);
+    max-width: calc(100% - 30px);
+    display: flex;
+    justify-content: center;
+}
+
+.TodoForm-button{
+    background: var(--App-4);
+    color: var(--Text-color-1);
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    width: 50%;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    transition: background 0.1s ease-in-out;
+
+}
+
+.TodoForm-button:hover{
+    background: var(--App-5);
+    transition: all 0.1s ease-in-out;
+}

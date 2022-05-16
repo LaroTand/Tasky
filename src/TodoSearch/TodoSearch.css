@@ -1,0 +1,24 @@
+.TodoSearch {
+    width: calc(100% - 50px);
+    font-family: 'Roboto', sans-serif;
+
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid var(--App-2);
+    outline: none;
+    border-radius: 50px;
+    font-size: 2.2rem;
+    color: var(--Text-color-1);
+    background: var(--App-2);
+
+    transition: border 0.2s ease-in-out;
+}
+
+
+.TodoSearch:focus {
+    border: 2px solid var(--App-4);
+    /* Transitions */
+    transition: all 0.2s ease-in-out;
+}

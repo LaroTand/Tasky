@@ -1,0 +1,60 @@
+.TodoItem {
+    margin: 25px 5px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background: #262a42;
+    box-shadow: 3px 3px 8px #21253a, -3px -3px 5px #2b2f4a;
+    gap: 15px;
+    position: relative;
+}
+
+.TodoItem-p{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.TodoItem-p--complete{
+    text-decoration: line-through;
+    font-weight: normal;
+    color: var(--App-6);
+}
+
+.TodoItem-check{
+    color: var(--App-3);
+    font-size: 2.6rem;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.TodoItem-check--active{
+    color: var(--App-5);
+    /* Glow effect */
+    text-shadow: 0 0 5px var(--App-4);
+}
+
+.TodoItem-check:hover{
+    color: var(--App-4);
+    /* Make bigger without affecting the other elements */
+    transform: scale(1.5);
+    /* Transitions */
+    transition: all 0.1s ease-in-out;
+}
+
+.TodoItem-delete {
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    color: var(--Danger-color-1);
+    font-size: 2.3rem;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.TodoItem-delete:hover{
+    /* Make bigger without affecting the other elements */
+    transform: scale(1.5);
+    /* Transitions */
+    transition: all 0.1s ease-in-out;
+}
